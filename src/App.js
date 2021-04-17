@@ -2,9 +2,11 @@ import React from 'react';
 import { Heading, VStack, IconButton } from "@chakra-ui/react";
 import { FaSun } from 'react-icons/fa';
 
+import TodoList from './components/TodoList';
+
 function App() {
   return (
-    <VStack p={4}>
+    <VStack p={4} w="100%" minH="100vh">
       <IconButton 
         icon={<FaSun />} 
         isRound="true" 
@@ -20,6 +22,7 @@ function App() {
       >
         Todo List
       </Heading>
+      <TodoList />
     </VStack>
   );
 }
