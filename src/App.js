@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Heading, VStack, IconButton } from "@chakra-ui/react";
+import { FaSun } from 'react-icons/fa';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VStack p={4}>
+      <IconButton 
+        icon={<FaSun />} 
+        isRound="true" 
+        size="lg" 
+        alignSelf="flex-end" 
+        aria-label="Alterar tema" />
+      <Heading 
+        mb={8} 
+        fontWeight="extrabold" 
+        size="2xl"
+        bgGradient="linear(to-r,blue.500,green.400,blue.200)"
+        bgClip="text"
+      >
+        Todo List
+      </Heading>
+    </VStack>
   );
 }
 
