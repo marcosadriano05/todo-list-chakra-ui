@@ -4,6 +4,10 @@
 
 Todo list made with React and Chakra UI.
 
+<div align="center">
+  <img src=".github/todo-list.gif" alt="Overview">
+</div>
+
 ## :rocket: Technologies
 
 - React
